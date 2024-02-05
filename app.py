@@ -45,6 +45,7 @@ if selected == "Creator":
 if selected == "Contact":
     st.title(f"You have selected {selected}")
     st.write(selected,'list of the creator')
+    st.write('Find the source code in [**my Github repo**] (https://github.com/SeiKuji/well-logging-initial-stages-/blob/main/app.py) and reach me out in [**LinkedIn**] (https://www.linkedin.com/in/carlvin-manjares-42317a263/)')
     st.write('---')
     
 
