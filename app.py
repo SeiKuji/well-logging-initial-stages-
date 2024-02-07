@@ -547,7 +547,7 @@ if selected == "Plotting":
         ax3.spines["top"].set_visible(True)
         ax3.spines["top"].set_edgecolor('black')
         ax3.set_xticks(list(np.linspace(1, 0, num = 2)))
-        ax3.fill_betweenx(well_df['DEPT'], shale, 0, interpolate=False, color = '#bebebe', linewidth=0.8, alpha=0.8, hatch = '--')
+        ax3.fill_betweenx(well_df['DEPT'], shale, 0, interpolate=False, facecolor = '#bebebe', linewidth=0.8, alpha=0.8, hatch = '--')
         
         ax4.get_xaxis().set_visible(False) 
         ax4.plot(sandstone, "DEPT", data = well_df, color = '#ffff00', lw=0.8)
@@ -559,25 +559,25 @@ if selected == "Plotting":
         ax5.plot(dolomite, "DEPT", data = well_df, color = '#8080ff', lw=0.8)
         ax5.set_xlim(1, 0)
         ax5.set_ylim(bot_depth, top_depth)
-        ax5.fill_betweenx(well_df['DEPT'], dolomite, 0, interpolate=False, color = '#8080ff', linewidth=0.8, alpha=0.8, hatch = '-/')
+        ax5.fill_betweenx(well_df['DEPT'], dolomite, 0, interpolate=False, facecolor = '#8080ff', linewidth=0.8, alpha=0.8, hatch = '-/')
 
         ax6.get_xaxis().set_visible(False) 
         ax6.plot(limestone, "DEPT", data = well_df, color = '#8080ff', lw=0.8)
         ax6.set_xlim(1, 0)
         ax6.set_ylim(bot_depth, top_depth)
-        ax6.fill_betweenx(well_df['DEPT'], limestone, 0, interpolate=False, color = '#80ffff', linewidth=0.8, alpha=0.8, hatch = '+')
+        ax6.fill_betweenx(well_df['DEPT'], limestone, 0, interpolate=False, facecolor = '#80ffff', linewidth=0.8, alpha=0.8, hatch = '+')
         
         ax7.get_xaxis().set_visible(False) 
         ax7.plot(anhydrite, "DEPT", data = well_df, color = '#ff80ff', lw=0.8)
         ax7.set_xlim(1, 0)
         ax7.set_ylim(bot_depth, top_depth)
-        ax7.fill_betweenx(well_df['DEPT'], anhydrite, 0, interpolate=False, color = '#ff80ff', linewidth=0.8, alpha=0.8, hatch = 'x')
+        ax7.fill_betweenx(well_df['DEPT'], anhydrite, 0, interpolate=False, facecolor = '#ff80ff', linewidth=0.8, alpha=0.8, hatch = 'x')
 
         ax8.get_xaxis().set_visible(False) 
         ax8.plot(halite, "DEPT", data = well_df, color = '#7ddfbe', lw=0.8)
         ax8.set_xlim(1, 0)
         ax8.set_ylim(bot_depth, top_depth)
-        ax8.fill_betweenx(well_df['DEPT'], halite, 0, interpolate=False, color = '#7ddfbe', linewidth=0.8, alpha=0.8, hatch = 'XXXXX')
+        ax8.fill_betweenx(well_df['DEPT'], halite, 0, interpolate=False, facecolor = '#7ddfbe', linewidth=0.8, alpha=0.8, hatch = 'XXXXX')
 
          
         
