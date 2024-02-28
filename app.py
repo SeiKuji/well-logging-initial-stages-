@@ -19,8 +19,6 @@ import striplog
 from striplog import Legend, Lexicon, Interval, Component, Decor
 
 
-#menu = option_menu()
-
 with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",  # required
